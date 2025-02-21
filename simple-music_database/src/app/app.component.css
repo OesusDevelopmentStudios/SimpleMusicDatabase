@@ -1,0 +1,48 @@
+header {
+    position: sticky;
+    align-items: center;
+    background-color: rgb(39, 41, 44);
+    height: 50px;
+    padding: 15px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-name {
+    font-size: 30px;
+    background: -webkit-linear-gradient(#7878b2, #b357a7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 33.33%;
+}
+
+.server-label-container {
+    display: inline-flex;
+    justify-content: center;
+    width: 33.33%;
+}
+
+.header-conatiner
+{
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 33.33%;
+}
+
+.settings-button {
+    background: -webkit-linear-gradient(#7878b2, #b357a7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.server-label {
+    padding-right: 10px;
+    color: #7878b2;
+}
+
+.server-address {
+    color: #7878b2;
+}
