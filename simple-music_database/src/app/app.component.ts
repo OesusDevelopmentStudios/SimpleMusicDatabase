@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button'
-import { MatIconModule } from '@angular/material/icon';
+
+import { TitleBarComponent } from './title-bar/title-bar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [MatButtonModule, MatIconModule],
+  imports: [TitleBarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+
+export class AppComponent
+{
   title = 'AiMusicBot database';
 }

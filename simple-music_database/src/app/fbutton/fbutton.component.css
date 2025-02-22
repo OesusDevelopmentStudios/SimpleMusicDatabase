@@ -1,0 +1,34 @@
+.outer-container {
+  position: relative;
+  backdrop-filter: blur(10px);
+  border-radius: 100%;
+  background-color: var(--bg_color, transparent);
+  width: var(--width, 100%);
+  height: var(--height, 100%);
+  cursor: pointer;
+}
+
+.outer-container:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  border: 4px solid transparent;
+  background: linear-gradient(140deg, var(--gradient_1, white), var(--gradient_2, white)) border-box;
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+}
+
+.inner-container {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background: -webkit-linear-gradient(var(--inner_color_1, white), var(--inner_color_2, white));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
